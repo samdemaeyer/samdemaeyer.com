@@ -1,0 +1,55 @@
+.cssBg {
+  color: #272822; }
+
+pre {
+  overflow: auto;
+  margin: 8px 0px;
+  padding: 20px 20px 20px 100px;
+  background: #272822;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.85em;
+  line-height: 1.6;
+  tab-size: 2;
+  -webkit-font-smoothing: auto;
+  font-family: 'Consolas','Courier New',Courier,monospace !important;
+  color: #F8F8F2; }
+  pre::selection {
+    background: #49483E; }
+  pre span::selection {
+    background: #49483E; }
+  pre span.element, pre span.pink {
+    color: #f92672;
+    font-family: inherit; }
+  pre span.noStyle, pre span.white {
+    color: #F8F8F2;
+    font-family: inherit; }
+  pre span.property, pre span.blue {
+    color: #66D9EF;
+    font-family: inherit; }
+  pre span.number, pre span.purple {
+    color: #AE81FF;
+    font-family: inherit; }
+  pre span.quotes, pre span.yellow {
+    color: #FFE792;
+    font-family: inherit; }
+  pre span.comment {
+    color: #75715E;
+    font-family: inherit; }
+  pre span.class, pre span.green {
+    color: #A6E22E;
+    font-family: inherit; }
+  pre span.orange {
+    color: #FD971F;
+    font-family: inherit; }
+  pre div.counter {
+    position: absolute;
+    left: 60px; }
+    pre div.counter:hover {
+      cursor: default; }
+    pre div.counter span {
+      color: #75715E;
+      display: block;
+      font-family: 'Consolas','Courier New',Courier,monospace !important; }
+
+/*# sourceMappingURL=monokai.css.map */

@@ -1,0 +1,215 @@
+<section class="section01" id="scroll1">
+	<div class="ribbon">
+		<span>Sam De Maeyer</span>
+	</div>
+	<div class="quote">
+		Hello, welcome to my website.
+	</div>
+	<div ng-controller="SliderCtrl">
+		<div class="slider">
+	        <pre ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage" ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()" ng-hide="!isCurrentSlideIndex($index)" ng-bind-html="slide.myHTML">
+	        </pre>
+	        <a class="arrow prev fa fa-chevron-left" href="#" ng-click="nextSlide()"></a>
+	        <a class="arrow next fa fa-chevron-right" href="#" ng-click="prevSlide()"></a>
+	        <nav class="sliderNav">
+	            <div class="wrapper">
+	                <ul class="dots">
+	                    <li class="dot" ng-repeat="slide in slides">
+	                        <a href="#" ng-class="{'active':isCurrentSlideIndex($index)}" ng-click="setCurrentSlideIndex($index);"></a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </nav>
+	        <div class="titleWrapper">
+		        <div ng-repeat="slide in slides">
+		        	<span ng-class="{'active':isCurrentSlideIndex($index)}">{{slide.description}}</span>
+		        </div>
+	        </div>
+	    </div>
+	</div>
+</div>
+</section>
+<section class="section02" id="scroll2">
+	<div class="container">
+		<div class="heading about"></div>	
+		<h1 class="title">I'm a frond-end Web Engenier From Belgium based in London</h1>
+		<div class="fourBlocks">
+			<div class="block">
+				<div class="logo small tv"></div>
+				<h1>Movies</h1>
+				<h2>What I watch</h2>
+				<span class="seperator"></span>
+				<p>
+					In Belgium almost all movies and series are from other countries. Mostly from the United States.
+					Even though I grew up with this, I prefer a good Belgian or French movie.
+					Personally I am not a big fan of SF but I discovered that I can appreciate movies like "The Hobbit", "Lord Of The Rings".
+					As for series, the most brilliant series I have ever watched were Belgian. Of course Belgium is a small country so the amount of good series is not that much. So I tried to expend my horizon with some American series which I also learned to appreciate.
+				</p>
+			</div>
+			<div class="block">
+				<div class="logo small music"></div>
+				<h1>Music</h1>
+				<h2>What I listen</h2>
+				<span class="seperator"></span>
+				<p>
+					When I was younger, I went through my metal/rock faze, as for now, I learned to appreciate more digital music as well. I am a fan of liquid Drum and Bass, especially while coding. Depending on the mood, I can listen to different styles of music, from Classical to Jazz and Blues. Recently I bought a new Record Player and currently I'm trying to create a new LP collection. I love to go to gigs and Festivals! For some years I have been going to a great festival in France, if you would be to be in the area of Lille in the beginning of June, you should definitely check it out, it's called Main Square Festival.
+				</p>
+			</div>
+			<div class="block">
+				<div class="logo small mountains"></div>
+				<h1>Snowboard</h1>
+				<h2>What I love</h2>
+				<span class="seperator"></span>
+				<p>
+					When I was younger I went snowboarding every week in an indoor ski slope in Holland. As it was only 30 minutes’ drive from my home town, I would drive there with some friends on Tuesdays to enjoy some hours of snowboarding. Tuesdays was "Student day" so we would enjoy some great discounts. However it was a lot of fun going there, there is no better feeling that standing on top of a real mountain in the morning and go for a "First Track"! I hope I can go back to the mountains soon for some snow fun.
+				</p>
+			</div>
+			<div class="block">
+				<div class="logo small food"></div>
+				<h1>Food</h1>
+				<h2>What I eat</h2>
+				<span class="seperator"></span>
+				<p>
+					Of course, like any developer, I like a good burger with chips and a pizza. But in my pervious education, I actually studied to be a chef. As a result my girlfriend and I cook a lot at home, with the necessary interesting cookbooks and inspiration we make the most delicious things from all over the world. At the moment, we are in to food from the Asian parts, but of course a good home cooked Belgian dish with the matching beer is indispensable as the true Belgians we are!
+				</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</section>
+<section class="section03" id="scroll3">
+	<div class="container">
+		<div class="heading skills"></div>	
+		<h1 class="title">Subtitle</h1>
+		<div class="threeBlocks">
+			<div class="block">
+				<div class="logo html"></div>
+			</div>
+			<div class="block">
+				<div class="logo css"></div>
+			</div>
+			<div class="block">
+				<div class="logo js"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="content">
+				<p>
+					Using HTML5 and CSS3 makes the implementation of websites and online applications much easier and faster. The code to be written will be clean and efficient. And thanks to CSS3, now we can create the most amazing animations without the use of JavaScript. JavaScript will now be used for much more interesting things like frameworks. For example, AngularJS. This website has been created in AngularJS and SASS. Both make the implementation of the website fast and clean. The newest technologies like NPM, Grunt, SASS, LESS, ... makes the coding much more fun!
+				</p>
+			</div>
+			<div class="logoContainer">
+				<img src="images/svg/logos.svg">
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section04" id="scroll4">
+	<div class="container">
+		<div class="heading projects"></div>
+		<h1 class="title">Please check out my works.</h1>
+		<div class="fourBlocks">
+			<div class="block">
+				<div class="logo crustaCare">
+					<span class="title"><a href="http://www.crustacare.be" target="_blank">www.crustacare.be</a></span>
+				</div>
+			</div>
+			<div class="block">
+				<div class="logo familyWare">
+					<span class="title"><a href="http://www.familyware.be" target="_blank">www.familyware.be</a></span>
+				</div>
+			</div>
+			<div class="block">
+				<div class="logo globalizers">
+					<span class="title"><a href="http://www.globalizers.uk" target="_blank">www.globalizers.uk</a></span>
+				</div>
+			</div>
+			<div class="block">
+				<div class="logo responsive">
+					<span class="title"><a href="http://www.samdemaeyer.com/Projects/new_01" target="_blank">www.samdemaeyer.com</a></span>
+				</div>
+			</div>
+			<div class="clear"></div><br /><br /><br />
+		</div>
+		<div class="fourBlocks">
+			<div class="block">
+				<div class="logo FullPage">
+					<span class="title"><a href="http://www.samdemaeyer.com/Projects/FullPageSlider" target="_blank">Full Page slider</a></span>
+				</div>
+			</div>
+			<div class="block">
+				<div class="logo old">
+					<span class="title"><a href="http://www.samdemaeyer.com/Projects/Old" target="_blank">www.samdemaeyer.be</a></span>
+				</div>
+			</div>
+			<div class="block">
+				<div class="logo wordpress">
+					<span class="title"><a href="http://www.samdemaeyer.com/Projects/wordpress" target="_blank">Wordpress</a></span>
+				</div>
+			</div>
+			<div class="block">
+				<div class="logo Activtrades">
+					<span class="title"><a href="https://www.activtrades.com/" target="_blank">www.activtrades.com</a></span>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</section>
+<section class="section05" id="scroll5">
+	<div class="container">
+		<div class="heading contact"></div>
+		<h1 class="title light">I'll be glad to answer your questions!</h1>
+		<form action="" method="POST" ng-submit="submitForm()" ng-controller="FormController" novalidate>
+			<div class="inputWrapper">
+				<label for="name" ng-class="{'errorName' : submission}" ng-bind="errorName" class="errorPop"></label>
+				<input type="text" name="name" placeholder="name" ng-model="formData.name" ng-class="{'error' : errorName}"><br />
+			</div>
+			<div class="inputWrapper">
+				<label for="email" ng-class="{'errorEmail' : submission}" ng-bind="errorEmail" class="errorPop"></label>
+				<input type="email" name="email" placeholder="email" ng-model="formData.email" ng-class="{'error' : errorEmail}"><br />
+			</div>
+			<div class="inputWrapper">
+				<label for="subject"></label>
+				<input type="text" name="subject" placeholder="subject" ng-model="formData.subject" ng-class="{'error' : errorSubject}"><br />
+			</div>
+			<div class="inputWrapper">
+				<label for="message" ng-class="{'errorMessage' : submission}" ng-bind="errorMessage" class="errorPop"></label>
+				<textarea name="message" placeholder="Your message" ng-model="formData.message" ng-class="{'error' : errorMessage}"></textarea>
+				<input type="submit" value="Submit">
+			</div>
+  			<div ng-class="{'submissionMessage' : submission}" ng-bind="submissionMessage"></div>
+		</form>
+		<!-- <form action="formProcess.php" method="POST">
+			<input type="hidden" name="subjectHeader" value="WebForm samdemaeyer.com">
+			<label for="name"></label>
+			<input type="text" name="name" placeholder="name">
+			<label for="email"></label>
+			<input type="email" name="email" placeholder="email">
+			<label for="subject"></label>
+			<input type="text" name="subject" placeholder="subject">
+			<label for="message"></label>
+			<textarea name="message" placeholder="Your message"></textarea>
+			<input type="submit" value="Submit">
+		</form> -->
+		<p></p>
+		<div class="socialWrapper">
+			<div class="linkWrapper">
+				<a href="https://instagram.com/samdemaeyer/" target="_blank" class="social instagram"></a>
+			</div>
+			<div class="linkWrapper">
+				<a href="https://www.facebook.com/sam.demaeyer.3" target="_blank" class="social facebook"></a>
+			</div>
+			<div class="linkWrapper">
+				<a href="mailto:sam_demaeyer@hotmail.com" class="social mail"></a>
+			</div>
+			<div class="linkWrapper">
+				<a href="http://uk.linkedin.com/in/sdemaeyer" target="_blank" class="social linkedin"></a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</section>
+<script type="text/ng-template" id="templateId">
+    <h1>Thank you for your submission</h1>
+    <p>I have successfully received your enquiry and will reply shortly.</p>
+</script>

@@ -1,0 +1,55 @@
+.cssBg {
+  color: black; }
+
+pre {
+  overflow: auto;
+  margin: 8px 0px;
+  padding: 20px 20px 20px 100px;
+  background: white;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.85em;
+  line-height: 1.6;
+  tab-size: 2;
+  -webkit-font-smoothing: auto;
+  font-family: 'Consolas','Courier New',Courier,monospace !important;
+  color: black; }
+  pre::selection {
+    background: #49483E; }
+  pre span::selection {
+    background: #49483E; }
+  pre span.element {
+    color: #0000e6;
+    font-family: inherit; }
+  pre span.noStyle, pre span.white {
+    color: white;
+    font-family: inherit; }
+  pre span.property, pre span.blue {
+    color: #0000e6;
+    font-family: inherit; }
+  pre span.number, pre span.purple {
+    color: #AE81FF;
+    font-family: inherit; }
+  pre span.quotes, pre span.yellow {
+    color: #f3ff0f;
+    font-family: inherit; }
+  pre span.comment {
+    color: #75715E;
+    font-family: inherit; }
+  pre span.class, pre span.green {
+    color: #009900;
+    font-family: inherit; }
+  pre span.orange {
+    color: #ce7b00;
+    font-family: inherit; }
+  pre div.counter {
+    position: absolute;
+    left: 60px; }
+    pre div.counter:hover {
+      cursor: default; }
+    pre div.counter span {
+      color: #75715E;
+      display: block;
+      font-family: 'Consolas','Courier New',Courier,monospace !important; }
+
+/*# sourceMappingURL=netbeans.css.map */

@@ -1,0 +1,49 @@
+$NetbeansPink: #f92672;
+$NetbeansWhite:rgb(255, 255, 255);
+$NetbeansBlue:rgb(0, 0, 230);
+$NetbeansPurple:#AE81FF;
+$NetbeansYelow:rgb(243, 255, 15);
+$NetbeansGray:#75715E;
+$NetbeansGreen:rgb(0, 153, 0);
+$NetbeansOrange:rgb(206, 123, 0);
+$NetbeansBlack:rgb(0, 0, 0);
+
+.cssBg{
+	color: $NetbeansBlack;
+}
+pre{
+	&::selection{background: #49483E;}
+	overflow: auto;
+	margin: 8px 0px;
+	padding: 20px 20px 20px 100px;
+	background: $NetbeansWhite;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.85em;
+	line-height: 1.6;
+	tab-size: 2;
+	-webkit-font-smoothing: auto;
+	font-family: 'Consolas','Courier New',Courier,monospace !important;
+	color:$NetbeansBlack;
+	span{
+	&::selection{background: #49483E;}
+		&.element{color:$NetbeansBlue; font-family: inherit;}
+		&.noStyle, &.white{color:$NetbeansWhite; font-family: inherit;}
+		&.property, &.blue{color:$NetbeansBlue; font-family: inherit;}
+		&.number, &.purple{color:$NetbeansPurple; font-family: inherit;}
+		&.quotes, &.yellow{color:$NetbeansYelow; font-family: inherit;}
+		&.comment{color:$NetbeansGray; font-family: inherit;}
+		&.class, &.green{color:$NetbeansGreen; font-family: inherit;}
+		&.orange{color:$NetbeansOrange; font-family: inherit;}
+	}
+	div.counter{
+		position: absolute;
+		left: 60px;
+		&:hover{cursor: default;}
+		span{
+			color:$NetbeansGray;
+			display: block;
+			font-family: 'Consolas','Courier New',Courier,monospace !important;
+		}
+	}
+}

@@ -1,0 +1,48 @@
+$MonokaiPink: #f92672;
+$MonokaiWhite:#F8F8F2;
+$MonokaiBlue:#66D9EF;
+$MonokaiPurple:#AE81FF;
+$MonokaiYelow:#FFE792;
+$MonokaiGray:#75715E;
+$MonokaiGreen:#A6E22E;
+$MonokaiOrange:#FD971F;
+
+.cssBg{
+	color: #272822;
+}
+pre{
+	&::selection{background: #49483E;}
+	overflow: auto;
+	margin: 8px 0px;
+	padding: 20px 20px 20px 100px;
+	background: #272822;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.85em;
+	line-height: 1.6;
+	tab-size: 2;
+	-webkit-font-smoothing: auto;
+	font-family: 'Consolas','Courier New',Courier,monospace !important;
+	color:$MonokaiWhite;
+	span{
+	&::selection{background: #49483E;}
+		&.element, &.pink{color:$MonokaiPink; font-family: inherit;}
+		&.noStyle, &.white{color:$MonokaiWhite; font-family: inherit;}
+		&.property, &.blue{color:$MonokaiBlue; font-family: inherit;}
+		&.number, &.purple{color:$MonokaiPurple; font-family: inherit;}
+		&.quotes, &.yellow{color:$MonokaiYelow; font-family: inherit;}
+		&.comment{color:$MonokaiGray; font-family: inherit;}
+		&.class, &.green{color:$MonokaiGreen; font-family: inherit;}
+		&.orange{color:$MonokaiOrange; font-family: inherit;}
+	}
+	div.counter{
+		position: absolute;
+		left: 60px;
+		&:hover{cursor: default;}
+		span{
+			color:$MonokaiGray;
+			display: block;
+			font-family: 'Consolas','Courier New',Courier,monospace !important;
+		}
+	}
+}
